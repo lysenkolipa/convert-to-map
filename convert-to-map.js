@@ -9,7 +9,7 @@
         if (typeof value == "string")
         {
             try { value = JSON.parse(value) }
-            catch (error) { value = [ ...value ] }
+            catch (error) { value = value.split("") }
         }
 
         if (value == null)
